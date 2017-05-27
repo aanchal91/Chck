@@ -1,0 +1,238 @@
+
+
+.navbar {
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  -o-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+  margin-bottom: 0;
+  margin-left: 230px;
+  border: none;
+  min-height: 50px;
+  border-radius: 0;
+}
+
+.navbar-custom-menu{
+  float: right;
+}
+}
+
+@media (max-width: 991px) {
+  .navbar-custom-menu a{
+    color: inherit;
+    background: transparent;
+  }
+}
+@media (max-width: 767px) {
+
+  .navbar-collapse  .navbar-right {
+    margin: 7.5px -15px;
+  }
+ .navbar-right > li {
+    color: inherit;
+    border: 0;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .navbar-custom-menu .navbar-nav > li {
+    float: left;
+  }
+  .navbar-custom-menu .navbar-nav {
+    margin: 0;
+    float: left;
+  }
+  .navbar-custom-menu .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+ .navbar {
+    width: 100%;
+    float: none;
+  }
+  .navbar {
+    margin: 0;
+  }
+  .navbar-custom-menu {
+    float: right;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse.pull-left {
+    float: none !important;
+  }
+  .navbar-collapse.pull-left + .navbar-custom-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 40px;
+  }
+}
+
+
+
+body.hold-transition  .navbar {
+  /* Fix for IE */
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+
+
+/*
+ * Component: Dropdown menus
+ * -------------------------
+ */
+/*Dropdowns in general*/
+.dropdown-menu {
+  box-shadow: none;
+  border-color: #eee;
+}
+.dropdown-menu > li > a {
+  color: #777;
+}
+
+.dropdown-menu > li > a > .fa {
+  margin-right: 10px;
+}
+
+
+.dropdown-menu > li > a:hover {
+  background-color: #e1e3e9;
+  color: #333;
+}
+.dropdown-menu > .divider {
+  background-color: #eee;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  padding: 1px 0 0 0;
+  border-top-width: 0;
+}
+.navbar-nav > .user-menu > .dropdown-menu,
+.navbar-nav > .user-menu > .dropdown-menu > .user-body {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header {
+  height: 175px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > img {
+  z-index: 5;
+  height: 90px;
+  width: 90px;
+  border: 3px solid;
+  border-color: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+  z-index: 5;
+  
+}
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p > small {
+  display: block;
+  font-size: 12px;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-body {
+  padding: 15px;
+  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #dddddd;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-body:before,
+.navbar-nav > .user-menu > .dropdown-menu > .user-body:after {
+  content: " ";
+  display: table;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-body:after {
+  clear: both;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-body a {
+  color: #444 !important;
+}
+@media (max-width: 991px) {
+  .navbar-nav > .user-menu > .dropdown-menu > .user-body a {
+    background: #fff !important;
+    color: #444 !important;
+  }
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer:before,
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {
+  content: " ";
+  display: table;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {
+  clear: both;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default {
+  color: #666666;
+}
+@media (max-width: 991px) {
+  .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default:hover {
+    background-color: #f9f9f9;
+  }
+}
+.navbar-nav > .user-menu .user-image {
+  float: left;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+@media (max-width: 767px) {
+  .navbar-nav > .user-menu .user-image {
+    float: none;
+    margin-right: 0;
+    margin-top: -8px;
+    line-height: 10px;
+  }
+}
+
+
+/* Fix dropdown menu in navbars */
+.navbar-custom-menu > .navbar-nav > li {
+  position: relative;
+  z-index: 10000;
+}
+
+.navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
+  position: absolute;
+  right: 0;
+  left: auto;
+}
+
+
+
+@media (max-width: 991px) {
+  .navbar-custom-menu > .navbar-nav {
+    float: right;
+  }
+  .navbar-custom-menu > .navbar-nav > li {
+    position: static;
+  }
+  .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
+    position: absolute;
+    right: 5%;
+    left: auto;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+}
+
+
